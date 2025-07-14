@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <div class="hero-card">
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="brand"></div>
+      <ul class="nav-links">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+      <div class="auth">
+        <a href="#" class="btn login">Log In</a>
+        <a href="#" class="btn signup">Sign Up</a>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- MAIN BODY -->
+    <div class="hero-body">
+      <!-- LEFT SIDE -->
+      <div class="copy">
+        <span class="eyebrow">START SAVING MONEY</span>
+        <h2>Smart Credit Card<br>For Your Daily Life.</h2>
+        <a href="#" class="btn download">Download ⭳</a>
+      </div>
+
+      <!-- RIGHT SIDE: PHONE UI -->
+      <div class="phone-ui">
+        <!-- Top Bar -->
+        <div class="phone-top">
+          <!-- Hamburger icon in phone -->
+          <div class="burger-icon" id="phone-menu-toggle" aria-label="Phone Menu">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="welcome">Welcome, Uday</span>
+        </div>
+
+        <!-- In-phone dropdown -->
+        <div class="phone-menu" id="phone-menu">
+          <ul>
+            <li>
+              <!-- Card icon -->
+              <svg width="14" height="14" fill="#aee2d2" viewBox="0 0 24 24" style="margin-right: 6px; vertical-align: middle;">
+                <path d="M2 6h20v2H2V6zm0 4h20v10H2V10zm2 2v2h4v-2H4z"/>
+              </svg>
+              Cards
+            </li>
+            <li>
+              <!-- Payment icon -->
+              <svg width="14" height="14" fill="#aee2d2" viewBox="0 0 24 24" style="margin-right: 6px; vertical-align: middle;">
+                <path d="M12 1a10 10 0 100 20 10 10 0 000-20zm1 17.93c-2.84.48-5.48-1.51-5.96-4.35a1 1 0 011.97-.39c.28 1.64 1.87 2.72 3.5 2.44a2.5 2.5 0 001.97-2.44c0-1.1-.72-2.03-1.74-2.34l-1.22-.36V8.5a1 1 0 112 0v.18c1.75.41 3 1.99 3 3.82 0 2.12-1.51 3.95-3.52 4.43z"/>
+              </svg>
+              Payments
+            </li>
+            <li>
+              <!-- Settings icon -->
+              <svg width="14" height="14" fill="#aee2d2" viewBox="0 0 24 24" style="margin-right: 6px; vertical-align: middle;">
+                <path d="M12 15.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7zm8.94-2.34l1.06 1.84-2.12 3.66-2.12-1.22a7.99 7.99 0 01-2.36.68L15.5 22h-7l-.4-2.88a7.99 7.99 0 01-2.36-.68L3.62 21.66 1.5 18l1.06-1.84a8.043 8.043 0 010-3.32L1.5 10l2.12-3.66 2.12 1.22a7.99 7.99 0 012.36-.68L8.5 2h7l.4 2.88c.81.16 1.6.42 2.36.68l2.12-1.22L22.5 6l-1.06 1.84c.33 1.06.5 2.19.5 3.32s-.17 2.26-.5 3.32z"/>
+              </svg>
+              Settings
+            </li>
+          </ul>
+        </div>
+
+        <!-- Card Swiper -->
+        <div class="card-slider">
+          <div class="card active" data-card="1">
+            <div class="card-header">
+              <span class="label">Balance</span>
+              <span class="dots">•••• •••• 2408</span>
+            </div>
+            <h3>$10,895</h3>
+            <span class="brand">VISA</span>
+          </div>
+          <div class="card" data-card="2">
+            <div class="card-header">
+              <span class="label">Balance</span>
+              <span class="dots">•••• •••• 1381</span>
+            </div>
+            <h3>$3,895</h3>
+            <span class="brand">VISA</span>
+          </div>
+          <div class="card-dots">
+            <span class="dot active" data-toggle="1"></span>
+            <span class="dot" data-toggle="2"></span>
+          </div>
+        </div>
+
+        <!-- Metrics -->
+        <div class="metrics">
+          <div class="metric">
+            <span>Credit Limits</span>
+            <strong>$12,000</strong>
+          </div>
+          <div class="metric">
+            <span>Money Spent</span>
+            <strong>$1,284</strong>
+          </div>
+        </div>
+
+        <!-- Scrollable History -->
+        <div class="history-scroll">
+          <h5>History</h5>
+          <ul>
+            <li><span class="circle mcd"></span>McDonald's <span class="amt">$50</span></li>
+            <li><span class="circle nflx"></span>Netflix <span class="amt">$120</span></li>
+            <li><span class="circle sbux"></span>Starbucks <span class="amt">$30</span></li>
+            <li><span class="circle uber"></span>Uber <span class="amt">$20</span></li>
+            <li><span class="circle amazon"></span>Amazon <span class="amt">$300</span></li>
+          </ul>
+        </div>
+
+      <!-- <footer></footer> -->
+        <div class="phone-footer">
+          <span class="footer-icon">
+            
+            <svg width="20" height="20" fill="#ffffff" viewBox="0 0 24 24">
+              <path d="M3 10L12 2l9 8v10a2 2 0 0 1-2 2h-5v-6h-4v6H5a2 2 0 0 1-2-2V10z"/>
+            </svg>
+            <small>Home</small>
+          </span>
+
+          <span class="footer-icon">
+          
+            <svg width="20" height="20" viewBox="0 0 24 24">
+              <path d="M12 5v14m7-7H5" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <small>Add</small>
+          </span>
+
+          <span class="footer-icon">
+            
+            <svg width="20" height="20" fill="#ffffff" viewBox="0 0 24 24">
+              <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/>
+            </svg>
+            <small>Account</small>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
